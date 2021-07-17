@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+
+    </group>
+
+    <item android:title="Farm Information">
+
+        <menu>
+            <item
+                android:id="@+id/nav_farmrecords"
+                android:icon="@drawable/ic_menu_record"
+                android:title="@string/menu_farmrecord" />
+            <item
+                android:id="@+id/nav_farmplanner"
+                android:icon="@drawable/ic_menu_my_calendar"
+                android:title="Farm Planner" />
+            <item
+                android:id="@+id/nav_farmstatistics"
+                android:icon="@drawable/ic_menu_statistics"
+                android:title="@string/menu_farmstatistics" />
+            <item
+                android:id="@+id/nav_reports"
+                android:icon="@drawable/ic_baseline_filter_frames_24"
+                android:title="REPORTS"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Social">
+
+        <menu>
+            <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_menu_chat"
+                android:title="Chat" />
+
+            <item
+                android:id="@+id/nav_market"
+                android:icon="@drawable/ic_menu_market"
+                android:title="@string/menu_market" />
+            <item
+                android:id="@+id/nav_newsfeed"
+                android:icon="@drawable/ic_menu_news"
+                android:title="News Feed" />
+
+        </menu>
+    </item>
+
+<group>
+    <item  android:title="Extras">
+    <menu>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="ACCOUNT"/>
+    </menu>
+    </item>
+</group>
+
+
+</menu>

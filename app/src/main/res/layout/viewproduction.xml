@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/backview"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewproductionlabel"
+            android:layout_height="wrap_content"
+            android:text="Production Label"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewproductiondate"
+            android:layout_height="wrap_content"
+            android:text="Production Date"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewproductionfield"
+            android:layout_height="wrap_content"
+            android:text="Field name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewmaizetype"
+            android:layout_height="wrap_content"
+            android:text="Maize Type"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewproductiontype"
+            android:layout_height="wrap_content"
+            android:text="Production Type"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewproductionquantity"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Production Details"
+            android:textStyle="bold"
+            android:id="@+id/viewproductiondetails"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

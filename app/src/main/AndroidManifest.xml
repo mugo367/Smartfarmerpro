@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartfarmer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/maize"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/maize"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.reports.TaskreportActivity" />
+        <activity android:name=".ui.customer.CustomerDetailActivity" />
+        <activity android:name=".ui.customer.CustomerRegisterActivity" />
+        <activity android:name=".ui.customer.CustomerLoginActivity" />
+        <activity android:name=".ui.reports.workingequipReportActivity" />
+        <activity android:name=".ui.Employee.Employeehome" />
+        <activity android:name=".ui.Employee.Employeeindex" />
+        <activity android:name=".ui.customer.CustomerActivity" />
+        <activity android:name=".SmartFarmerActivity" />
+        <activity android:name=".ui.reports.productionReportActivity" />
+        <activity android:name=".ui.reports.expenseReportActivity" />
+        <activity android:name=".ui.reports.incomeReportActivity" />
+        <activity android:name=".ui.reports.employeetypeReportActivity" />
+        <activity android:name=".ui.reports.employeedesignationReportActivity" />
+        <activity android:name=".ui.market.DetailActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".forgotpasswordActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

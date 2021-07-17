@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="#09AC9D"
+    android:layout_height="match_parent"
+    tools:context=".ui.farmrecords.FarmRecordFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+
+        android:id="@+id/layoutMainfarm"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/FarmLabel"
+            android:text="Farm Details"
+            android:padding="7dp"
+            android:textSize="22sp"
+
+            android:textStyle="bold"
+            android:textColor="@color/textTabBright"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/EmployeeLabel"
+            android:text="Employees"
+            android:padding="7dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/EquipmentLabel"
+            android:text="Equipment"
+            android:padding="7dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/farmmainViewPager"
+        android:layout_below="@+id/layoutMainfarm"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:orientation="vertical"
+
+tools:context=".ui.customer.CustomerRegisterActivity">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarregistercus"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#047A09"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</com.google.android.material.appbar.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME TO SMARTFARMER MARKET PLACE"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textStyle="italic"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/etFullnamecus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:padding="8dp"
+                android:hint="Full Name"
+                android:textColor="@color/White"
+                android:textColorHint="#FFFFFF"
+                android:maxLines="1"
+                android:background="@drawable/input_outline"
+                android:drawableLeft="@drawable/round_account_circle_white_18dp" />
+
+
+
+            <EditText
+                android:id="@+id/etusernamecus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/White"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:background="@drawable/input_outline"
+                android:drawableLeft="@drawable/round_account_circle_white_18dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Username"
+                android:maxLines="1"
+
+                android:padding="8dp"
+                 />
+
+
+
+            <EditText
+                android:id="@+id/etEmailregistercus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/round_email_white_18dp"
+                android:drawablePadding="12dp"
+                android:textColor="@color/White"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:background="@drawable/input_outline"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C1F8C3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etPasswordcus"
+                android:drawablePadding="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/White"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:background="@drawable/input_outline"
+                android:paddingBottom="8dp"
+                android:hint="Password"
+                android:maxLines="1"
+
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/baseline_lock_white_18dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etPassword2cus"
+                android:drawablePadding="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/White"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:background="@drawable/input_outline"
+                android:hint="Confirm Password"
+                android:maxLines="1"
+
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/baseline_lock_white_18dp" />
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:text="County (Location)"
+                    android:textColor="@color/White"
+                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:background="@drawable/input_outline"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:drawableLeft="@drawable/ic_baseline_location_white" />
+
+                <Spinner
+                    android:id="@+id/countylocationcus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/counties" />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/subcountycus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:background="@drawable/input_outline"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:padding="8dp"
+                android:hint="Sub-County"
+
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_baseline_field_24" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerbuttoncus"
+                android:background="@drawable/custombutton"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textColor="#f16f7d"
+                android:padding="16dp"
+                android:clickable="true"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGotoLogincus"
+                android:background="@drawable/custombutton"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textColor="#f16f7d"
+                android:padding="16dp"
+                android:clickable="true"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarcus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:paddingTop="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

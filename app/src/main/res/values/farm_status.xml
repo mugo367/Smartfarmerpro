@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="farmstatus">
+        <item>Planted</item>
+        <item>Not PLanted</item>
+    </string-array>
+
+    <string-array name="farmtasks">
+        <item>Land Tilling</item>
+        <item>Bush Clearing and Cleaning</item>
+        <item>Sowing</item>
+        <item>Weeding</item>
+        <item>Pesticides Spraying</item>
+        <item>Harvesting</item>
+        <item>Post Harvesting(Drying and Storage)</item>
+        <item>Equipment Cleaning</item>
+        <item>Record Keeping</item>
+        <item>Manure/Fertilizer Application</item>
+
+    </string-array>
+
+    <string-array name="Typemaize">
+        <item>Field Corn</item>
+        <item>Sweet Corn</item>
+        <item>Baby Corn</item>
+        <item>Indian Corn</item>
+        <item>Hybrid</item>
+        <item>Flint</item>
+        <item>Dent</item>
+        <item>Flour Corn</item>
+
+    </string-array>
+
+
+
+
+</resources>

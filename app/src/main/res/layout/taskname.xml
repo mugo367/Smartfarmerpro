@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFE500"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report on Task"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:hint="Employee Name"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/empname"
+            android:textColor="#000"
+            android:background="#92C8CF"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:hint="Date"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/empdate"
+            android:background="#92C8CF"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="Select Task Name"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown"
+            android:padding="5dp"
+            android:entries="@array/farmtasks"
+            android:id="@+id/spinnertask"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Problem Faced"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="#92C8CF"
+            android:hint="Problem Faced"
+            android:lines="7"
+            android:gravity="start"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Recommendation"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:hint="Recommendations"
+            android:background="#92C8CF"
+            android:gravity="start"
+            android:id="@+id/recomme"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:lines="7"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Additional information"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:hint="Additional information"
+            android:paddingRight="10dp"
+            android:background="#92C8CF"
+            android:gravity="start"
+            android:id="@+id/additionalinfo"
+            android:paddingLeft="10dp"
+            android:lines="7"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+
+
+        <Button
+        android:id="@+id/reportadd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custombutton"
+        android:text="Add Report"
+        android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+</ScrollView>

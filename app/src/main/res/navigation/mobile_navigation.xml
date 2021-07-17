@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.smartfarmer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_farmrecords"
+        android:name="com.example.smartfarmer.ui.farmrecords.FarmRecordFragment"
+        android:label="@string/menu_farmrecord"
+        tools:layout="@layout/fragment_farmrecord" />
+
+    <fragment
+        android:id="@+id/nav_farmplanner"
+        android:name="com.example.smartfarmer.ui.farmplanner.FarmPlannerFragment"
+        android:label="Farm Planner"
+        tools:layout="@layout/fragment_farmplanner" />
+
+    <fragment
+        android:id="@+id/nav_farmstatistics"
+        android:name="com.example.smartfarmer.ui.farmstatistics.FarmStatisticsFragment"
+        android:label="@string/menu_farmstatistics"
+        tools:layout="@layout/fragment_farmstatistics" />
+
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:label="Chat"
+        android:name="com.example.smartfarmer.ui.chat.ChatFragment"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/nav_market"
+        android:name="com.example.smartfarmer.ui.market.MarketFragment"
+        android:label="@string/menu_market"
+        tools:layout="@layout/fragment_market" />
+
+    <fragment
+        android:id="@+id/nav_newsfeed"
+        android:name="com.example.smartfarmer.ui.news.NewsFragment"
+        android:label="News Feed"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.example.smartfarmer.ui.reports.ReportFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.smartfarmer.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+</navigation>

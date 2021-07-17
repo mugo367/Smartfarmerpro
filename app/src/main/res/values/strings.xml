@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Smartfarmer</string>
+    <string name="already_have_an_account"><i> Already have an account?</i> <b>SIGN IN</b></string>
+    <string name="dont_have_an_account"><i>Don\'t have an account?</i> <b>SIGN UP</b></string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Smart Farmer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_farmrecord">Farm Records</string>
+    <string name="menu_farmstatistics">Farm Statistics</string>
+    <string name="menu_market">Market</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fielddetails">fielddetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_employeedetails">employeedetailsActivity</string>
+    <string name="title_activity_equipmentdetails">equipmentdetailsActivity</string>
+    <string name="title_activity_employee_homepage">Employee Home</string>
+
+</resources>

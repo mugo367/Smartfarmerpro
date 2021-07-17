@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="14dp"
+    android:elevation="2dp"
+    android:layout_margin="5dp"
+
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_margin="3dp"
+        android:background="#FFFFFF">
+
+        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Field Name"
+                        android:id="@+id/employeefieldname"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+
+                        />
+        <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <LinearLayout
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="6dp">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Task Name"
+                     android:textStyle="bold"
+                     android:textSize="17sp"
+                     android:textColor="#000"
+                     />
+                 <androidx.appcompat.widget.AppCompatTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Taskname"
+                     android:textSize="13sp"
+                     android:scrollHorizontally="false"
+                     android:id="@+id/employeetaskname"
+                     android:textColor="#1690F1"
+                     />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="6dp">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Equipment"
+                     android:textStyle="bold"
+                     android:textSize="17sp"
+                     android:textColor="#000"
+                     />
+                 <androidx.appcompat.widget.AppCompatTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Equipment"
+                     android:textSize="13sp"
+                     android:scrollHorizontally="false"
+                     android:id="@+id/employeeequipment"
+                     android:textColor="#1690F1"
+                     />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="6dp">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Start Date"
+                     android:textStyle="bold"
+                     android:textSize="17sp"
+                     android:textColor="#000"
+                     />
+                 <androidx.appcompat.widget.AppCompatTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="End Date"
+                     android:textSize="13sp"
+                     android:scrollHorizontally="false"
+                     android:id="@+id/employeestartdate"
+                     android:textColor="#1690F1"
+                     />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="6dp">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="End Date"
+                     android:textStyle="bold"
+                     android:textSize="17sp"
+                     android:textColor="#000"
+                     />
+                 <androidx.appcompat.widget.AppCompatTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="End Date"
+                     android:textSize="13sp"
+                     android:scrollHorizontally="false"
+                     android:id="@+id/employeeenddate"
+                     android:textColor="#1690F1"
+                     />
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

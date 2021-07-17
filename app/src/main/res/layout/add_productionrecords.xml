@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+android:layout_gravity="center"
+android:orientation="vertical"
+
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:background="#09AC9D"
+    android:orientation="vertical"
+    android:layout_width="255dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="PRODUCTION RECORDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:paddingTop="7dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/productionname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+
+            android:gravity="center"
+            android:inputType="text"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Production Label"/>
+
+        <TextView
+            android:id="@+id/productiondate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:textColor="#000"
+            android:gravity="center"
+            android:inputType="date"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Production Date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Field"
+            android:paddingBottom="4dp"
+            android:textColor="@color/White"
+            android:layout_gravity="left"/>
+
+        <Spinner
+            android:id="@+id/fieldname_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Maize Type"
+            android:paddingBottom="4dp"
+            android:textColor="@color/White"
+            android:layout_gravity="left"/>
+
+        <Spinner
+            android:id="@+id/maizetype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:spinnerMode="dropdown"
+            android:entries="@array/Typemaize"
+            android:backgroundTint="#FFFFFF"
+
+            android:gravity="center"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Production Type"
+            android:paddingBottom="4dp"
+            android:textColor="@color/White"
+            android:layout_gravity="left"/>
+        <Spinner
+            android:id="@+id/productiontype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:spinnerMode="dropdown"
+            android:entries="@array/productiontype"
+            android:backgroundTint="#FFFFFF"
+
+            android:gravity="center"
+            android:textColor="#000" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity Produced"
+                android:padding="7dp"
+                android:layout_marginBottom="7dp"
+
+
+                android:gravity="center"
+                android:inputType="text"
+                android:background="@drawable/input_outline"
+                android:ems="10"
+                android:id="@+id/productionquantity"/>
+
+            <Spinner
+                android:id="@+id/unit"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_marginBottom="7dp"
+
+
+                android:spinnerMode="dropdown"
+                android:entries="@array/unit"
+                android:backgroundTint="#FFFFFF"
+
+                android:gravity="center"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Production Details"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/productiondetails"/>
+
+        <Button
+            android:id="@+id/productionsave"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custombutton"
+            android:text="Add Record"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

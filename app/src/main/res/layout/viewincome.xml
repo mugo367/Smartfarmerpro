@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/backview"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewtransactiondate"
+            android:layout_height="wrap_content"
+            android:text="Transaction Date"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewtransactiontype"
+            android:layout_height="wrap_content"
+            android:text="Transaction Type"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewtransactionname"
+            android:layout_height="wrap_content"
+            android:text="Transaction Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewtransactioncost"
+            android:layout_height="wrap_content"
+            android:text="Transaction Cost"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Details"
+            android:textStyle="bold"
+            android:id="@+id/viewtransactiondetails"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

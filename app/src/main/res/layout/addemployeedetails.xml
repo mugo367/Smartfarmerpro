@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+android:layout_gravity="center"
+android:orientation="vertical"
+
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:background="#09AC9D"
+    android:orientation="vertical"
+    android:layout_width="275dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Add New Employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:layout_marginBottom="7dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee Name"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/employeename"/>
+
+        <EditText
+            android:id="@+id/employeeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="7dp"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="ID Number"/>
+
+        <EditText
+            android:id="@+id/employeeemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="7dp"
+            android:padding="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Email Address"/>
+        <EditText
+            android:id="@+id/employeecontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:background="@drawable/input_outline"
+            android:textColor="#000"
+            android:hint="Phone Number" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Designation"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+
+            android:spinnerMode="dropdown"
+            android:entries="@array/employeedesignation"
+            android:background="@drawable/input_outline"
+            android:textColor="#000"
+            android:id="@+id/employeedesignation"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employment Type "
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:spinnerMode="dropdown"
+            android:entries="@array/employeetype"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/employeetype"/>
+        <TextView
+            android:id="@+id/employeedateemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="date"
+
+            android:background="@drawable/input_outline"
+            android:textColor="#000"
+            android:hint="Date of Employment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact Person"
+            android:paddingBottom="4dp"
+            android:textColor="@color/White"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/employeecontactperson"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/employeephonenumber"/>
+
+        <Button
+            android:id="@+id/addemp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custombutton"
+            android:text="Add Details"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

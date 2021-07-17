@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarregister"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#047A09"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="16dp">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/maize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO SMARTFARMER"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Personal Details"
+                   android:layout_gravity="center_horizontal"
+                   android:paddingTop="20dp"
+                   android:textSize="20sp"/>
+
+
+               <EditText
+                   android:id="@+id/etFullname"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:drawablePadding="12dp"
+                   android:ems="10"
+                   android:padding="8dp"
+                   android:hint="Full Name"
+                   android:textColorHint="#ffffff"
+                   android:maxLines="1"
+                   android:drawableLeft="@drawable/round_account_circle_white_18dp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#C1F8C3" />
+
+
+               <EditText
+                   android:id="@+id/etusername"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+
+                   android:drawableLeft="@drawable/round_account_circle_white_18dp"
+                   android:drawablePadding="12dp"
+                   android:ems="10"
+                   android:hint="Username"
+                   android:maxLines="1"
+                   android:padding="8dp"
+                   android:textColorHint="#ffffff" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#C1F8C3" />
+
+               <EditText
+                   android:id="@+id/etRegPhone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+
+                   android:drawablePadding="12dp"
+                   android:ems="10"
+                   android:inputType="phone"
+                   android:maxLength="14"
+                   android:padding="8dp"
+                   android:hint="Phone number"
+                   android:textColorHint="#ffffff"
+                   android:maxLines="1"
+                   android:drawableLeft="@drawable/round_phone_white_18dp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#C1F8C3" />
+               <EditText
+                   android:id="@+id/etEmailregister"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+                   android:drawableLeft="@drawable/round_email_white_18dp"
+                   android:drawablePadding="12dp"
+                   android:ems="10"
+                   android:hint="Email"
+                   android:inputType="textEmailAddress"
+                   android:maxLines="1"
+                   android:padding="8dp"
+                   android:textColorHint="#ffffff" />
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#C1F8C3" />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPassword"
+                   android:ems="10"
+                   android:id="@+id/etPassword"
+                   android:drawablePadding="12dp"
+                   android:paddingLeft="8dp"
+                   android:paddingRight="8dp"
+                   android:paddingTop="8dp"
+                   android:paddingBottom="8dp"
+                   android:textColorHint="#ffffff"
+                   android:hint="Password"
+                   android:maxLines="1"
+
+                   android:layout_marginTop="4dp"
+                   android:drawableLeft="@drawable/baseline_lock_white_18dp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#C1F8C3" />
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPassword"
+                   android:ems="10"
+                   android:id="@+id/etPassword2"
+                   android:drawablePadding="12dp"
+                   android:paddingLeft="8dp"
+                   android:paddingRight="8dp"
+                   android:paddingTop="8dp"
+                   android:paddingBottom="10dp"
+                   android:textColorHint="#ffffff"
+                   android:hint="Confirm Password"
+                   android:maxLines="1"
+
+                   android:layout_marginTop="4dp"
+                   android:drawableLeft="@drawable/baseline_lock_white_18dp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#C1F8C3" />
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Details"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="30dp"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1F8C3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:padding="8dp"
+                        android:text="County (Location)"
+                        android:textColor="#ffffff"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:drawableLeft="@drawable/ic_baseline_location_white" />
+
+                    <Spinner
+                        android:id="@+id/countylocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:entries="@array/counties" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1F8C3" />
+
+                <EditText
+                    android:id="@+id/subcounty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:hint="Sub-County"
+                    android:textColorHint="#ffffff"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_baseline_field_24" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1F8C3" />
+
+                <EditText
+                    android:id="@+id/fieldnameregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:hint="Farm Name"
+                    android:textColorHint="#ffffff"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_baseline_field_24" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1F8C3" />
+
+                <EditText
+                    android:id="@+id/fieldsizeregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:hint="Farm Size"
+                    android:textColorHint="#ffffff"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_baseline_field_size_select_small_24" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1F8C3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1F8C3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerbutton"
+                    android:background="@drawable/custombutton"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_marginTop="30dp"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:textColor="#f16f7d"
+                    android:padding="16dp"
+                    android:clickable="true"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnGotoLogin"
+                    android:background="@drawable/custombutton"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_marginTop="30dp"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:textColor="#f16f7d"
+                    android:padding="16dp"
+                    android:clickable="true"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:paddingTop="20dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#09AC9D"
+    android:layout_height="match_parent"
+    tools:context=".ui.reports.ReportFragment">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Employee Designation Report"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:id="@+id/employeedesignationreport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Employee Type Report"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:id="@+id/employeetypereport"
+        android:layout_below="@+id/employeedesignationreport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Income Report"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:layout_below="@+id/employeetypereport"
+        android:id="@+id/incomereport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Expense Report"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:layout_below="@+id/incomereport"
+        android:id="@+id/expensereport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Production Report"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:layout_below="@+id/expensereport"
+        android:id="@+id/productionreport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Working Equipment Report"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:layout_below="@+id/productionreport"
+        android:id="@+id/workingreport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombutton"
+        android:text="Task Reports"
+        android:gravity="center"
+        android:textColor="#0074FF"
+        android:layout_below="@+id/workingreport"
+        android:id="@+id/taskreport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

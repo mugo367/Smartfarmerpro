@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+android:layout_gravity="center"
+android:orientation="vertical"
+
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:background="#09AC9D"
+    android:orientation="vertical"
+    android:layout_width="270dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="INCOME AND EXPENSES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:paddingTop="7dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Name"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/transactionname"/>
+
+        <EditText
+            android:id="@+id/transactiondate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="date"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Transaction Date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Transaction Type"
+            android:paddingBottom="4dp"
+            android:textColor="@color/White"
+            android:layout_gravity="left"/>
+        <Spinner
+            android:id="@+id/transactiontype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:spinnerMode="dropdown"
+            android:entries="@array/transactiontype"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="phone"
+            android:background="@drawable/input_outline"
+            android:textColor="#000" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Cost "
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/transactioncost"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Details"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/transactiondetatils"/>
+
+        <Button
+            android:id="@+id/incomesave"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custombutton"
+            android:text="Add Transaction"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

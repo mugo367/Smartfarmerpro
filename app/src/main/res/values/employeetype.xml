@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="employeedesignation">
+        <item>Manager</item>
+        <item>Normal Worker</item>
+        <item>Assistant Manager</item>
+    </string-array>
+
+    <string-array name="employeetype">
+        <item>Permanent</item>
+        <item>Casual</item>
+        <item>Contract or SubContract</item>
+    </string-array>
+
+
+</resources>
